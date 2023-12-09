@@ -30,7 +30,7 @@ app.post("/add", (req, res) => {
   }
 });
 
-// Updating Array //
+// deleting  Array //
 
 app.delete("/delete", (req, res) => {
   const final = JSON.parse(req.body);
@@ -71,6 +71,7 @@ app.get("/get", (req, res) => {
   }
 });
 
+// Updating Array //
 app.patch("/update", (req, res) => {
   const replace = req.body.replace;
   const wiith = req.body.with;
